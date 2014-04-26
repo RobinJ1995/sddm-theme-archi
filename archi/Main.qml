@@ -73,7 +73,7 @@ Rectangle {
                 state: (listView.currentIndex === index) ? "active" : ""
 
                 onLogin: sddm.login(model.name, password, sessionIndex);
-
+		
                 MouseArea {
                     anchors.fill: parent
                     hoverEnabled: true
@@ -169,6 +169,7 @@ Rectangle {
             anchors.top: parent.top;
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width; height: 40
+            
 
             Row {
                 anchors.left: parent.left
@@ -194,12 +195,17 @@ Rectangle {
                     anchors.verticalCenter: parent.verticalCenter
 
                     arrowIcon: "angle-down.png"
+		    
+		    color: Qt.rgba(0, 0, 0, 0.4)
+		    textColor: Qt.rgba(1, 1, 1, 0.8)
+		    borderColor: Qt.rgba(0, 0, 0, 0.2)
+		    focusColor: Qt.rgba(0, 0, 0, 0.2)
+		    hoverColor: Qt.rgba(0, 0, 0, 0.2)
 
                     model: sessionModel
                     index: sessionModel.lastIndex
 
                     font.pixelSize: 14
-                    opacity: 0.6
 
                     KeyNavigation.backtab: nextUser; KeyNavigation.tab: btnReboot
                 }
