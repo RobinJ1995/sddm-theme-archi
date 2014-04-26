@@ -1,0 +1,14 @@
+[SddmGreeterTheme]
+Name=Archi
+Description=Archi Theme for SDDM.
+Author=RobinJ1995 (Robin Jacobs)
+Copyright=(c) 2014, Robin Jacobs
+License=CC-BY-SA
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/RobinJ1995/sddm-theme-archi
+MainScript=Main.qml
+ConfigFile=theme.conf
+Email=broederjacobs@gmail.com
+Theme-Id=archi
+Theme-API=1.1
